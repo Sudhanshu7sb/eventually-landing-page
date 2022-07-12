@@ -1,0 +1,342 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/* Css reset end */
+@font-face{
+    font-family:codedamnFont;
+    src:url('./assets/fonts/KFOlCnqEu92Fr1MmWUlfBBc4AMP6lQ.woff2')
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: codedamnFont;
+}
+
+
+body {
+    background: url("./assets/images/bg01.jpg") no-repeat cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('./assets/images/bg01.jpg');
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+main {
+    width: 40%;
+    height: 80vh;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+
+main h3 {
+    font-family: codedamnFont, sans-serif;
+    font-size: 52px;
+    font-weight: bold;
+    color: #fff;
+    margin: 20px;
+}
+
+.headline {
+    margin-left: 30px;
+    color: #fff;
+    line-height: 26.4px;
+    font-size: 24px;
+
+}
+
+.form {
+    margin: 20px 20px 20px 30px;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+
+}
+
+
+
+.form input {
+    background: transparent;
+    padding: 10px;
+    outline: none;
+    border: 0.5px solid #fff;
+    border-radius: 5px;
+    width: 65%;
+    margin-right: 5px;
+    color: #fff;
+}
+
+.form input:hover {
+    border: 0.5px solid #1cb495;
+}
+
+.form input::placeholder {
+    color: darkgrey;
+}
+
+.form button {
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: #1cb495;
+    color: #fff;
+    outline: none;
+    margin-left: 5px;
+    border: 0;
+    font-size: 10px;
+    font-weight: 600;
+
+}
+
+.form button:hover {
+    opacity: 70%;
+}
+
+footer {
+    margin: 30px 30px 0 30px;
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+
+}
+
+.fa-twitter,
+.fa-instagram,
+.fa-github,
+.fa-envelope {
+    color: lightgrey;
+    margin: 10px;
+}
+
+.fa-twitter:hover,
+.fa-instagram:hover,
+.fa-github:hover,
+.fa-envelope:hover {
+    color: #1cb495;
+}
+
+
+
+footer h6 {
+    color: lightgrey;
+    font-size: 14px;
+}
+
+
+/* media queries */
+
+
+
+
+@media only screen and (max-width:480px) {
+    main {
+        width: 90%;
+        margin: 10px;
+    }
+
+    main h3 {
+        display: none;
+    }
+
+    .headline {
+        display: none;
+    }
+
+    .form {
+        flex-direction: column;
+        width: 95%;
+    }
+
+    .form input {
+        width: 100%;
+    }
+
+    .form button {
+        width: 100%;
+        margin: 15px 0;
+    }
+
+    footer {
+        margin: 10px;
+    }
+
+    .fa-twitter:hover,
+    .fa-instagram:hover,
+    .fa-github:hover,
+    .fa-envelope:hover {
+        color: #1cb495;
+        /* margin: 10px; */
+    }
+}
+
+
+@media only screen and (max-width: 768px) and (min-width: 480px) {
+    main {
+        width: 90%;
+    }
+
+    .headline {
+        width: 85%;
+        font-size: 17px !important;
+        
+    }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 768px) {
+    main {
+        width: 80%;
+    }
+
+    .form {
+        width: 70%;
+    }
+
+    .headline {
+        width: 73%;
+        font-size: 18px!important;
+        line-height: 1.4;
+    }
+}
+
+@media only screen and (max-width:1200px ) and (min-width:1024px){
+    .headline{
+        font-size: 16px;
+        line-height: 1.4;
+    }
+}
